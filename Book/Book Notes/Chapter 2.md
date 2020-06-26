@@ -5,9 +5,9 @@
 A relational database consists of a collection of **tables**, each of which is assigned a
 unique name.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-23.png)
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-24.png)
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-25.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-23.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-24.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-25.png)
 
 The _prereq_ table in Figure 2.3 indicates that two courses are related in the sense
 that one course is a prerequisite for the other. As another example, when we consider
@@ -57,9 +57,9 @@ sections that they teach. Figure 2.7 shows a sample instance of the _teaches_ re
 The relation schema to describe this association is: <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_teaches (ID, course_id, sec_id, semester, year)_.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-26.png)
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-29.png)
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-28.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-26.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-29.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-28.png)
 
 ## 2.3 | Keys
 
@@ -106,7 +106,7 @@ Primary-key attributes are shown underlined. Foreign-key constraints appear as a
 relation to the primary key of the referenced relation. We use a two-headed arrow, instead of a single-headed arrow, to indicate a
 referential integrity constraint that is not a foreign-key constraint.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-30.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-30.png)
 
 ### Section 2.5 was not covered in lecture.
 
@@ -142,7 +142,7 @@ The attributes that we want to appear in the result is put in the subscript of �
 -   To get the monthly salary of each instructor, we write: <br/>
     Π<sub>ID,name,salary∕12</sub> (instructor)
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-97.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-97.png)
 
 ### 2.6.3 | Composition of Relational Operations
 
@@ -158,7 +158,7 @@ Since the result of a relational-algebra operation is of the same type
 
 The **Cartesian-product operation**, denoted by a cross (×), allows us to combine information from any two relations. We write the Cartesian product of relations _r1_ and _r2_ as _r1_ × _r2_.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-98.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-98.png)
 
 ### 2.6.5 | The Join Operation
 

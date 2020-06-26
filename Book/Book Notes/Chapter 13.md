@@ -19,7 +19,7 @@ There are two ways to store a record:
 
 Let us look at a file of _instructor_ records for our university database:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-64.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-64.png)
 
 Assume that each character occupies 1 byte and that numeric (8,2) occupies 8
 bytes. Suppose that instead of allocating a variable amount of bytes for the attributes
@@ -27,7 +27,7 @@ _ID_, _name_, and _dept_name_, we allocate the maximum number of bytes that each
 can hold. Then, the _instructor_ record is 53 bytes long. A simple approach is to use the
 first 53 bytes for the first record, the next 53 bytes for the second record, and so on.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-65.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-65.png)
 
 However, there are two problems with this implementation:
 
@@ -45,9 +45,9 @@ The solve the second problem of record deletion, there are three possible soluti
 
 Since solutions 1 and 2 require multiple block accesses, solution 3 is the most appealing.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-66.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-66.png)
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-67.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-67.png)
 
 Since insertions tend to be more
 frequent than deletions, it is acceptable to leave open the space occupied by the deleted
@@ -55,7 +55,7 @@ record and to wait for a subsequent insertion before reusing the space. To keep 
 
 A **file header** contains a variety of information about the file, but the one we are interested in is the location of the first record whose contents are deleted. The first deleted record will then point to the location of the second deleted element, and so on. This forms a linked list of deleted locations, which is often referred to as a **free list**.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-68.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-68.png)
 
 ## Variable-Length Records
 
@@ -80,13 +80,13 @@ assume that the _offset_ and _length_ values are stored in two bytes each, for a
 bytes per attribute. The _salary_ attribute is assumed to be stored in 8 bytes, and each
 string takes as many bytes as it has characters.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-69.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-69.png)
 
 Figure 13.5 also shows a **null bitmap**, which indicates which attributes of the record have a null value. Since the _salary_ attribute is the fourth attribute stored in the first section of memory, a null bitmap of 0001 would set the _salary_ attribute to null. Since Figure 13.5 only shows four attributes, the null bitmap can be stored in one byte, but more memory will be necessary for records with more attributes.
 
 Next, we address the structure of a block. The **slotted-page structure** is commonly used for organizing records within a block and is shown in Figure 13.6.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-70.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-70.png)
 
 The block's header contains the following information:
 
@@ -120,7 +120,7 @@ Records are chained together in sequential order by pointers, but records are al
 
 Figure 13.7 is a sequential file of _instructor_ records using _ID_ as the search key.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-71.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-71.png)
 
 Deletions are managed using pointer chains as discussed previously.
 
@@ -130,7 +130,7 @@ Insertions, on the other hand, are much trickier. There are two rules when inser
 2. If there is a free record within the same block as this record, insert the new record there. Otherwise, insert the new record in
    an overflow block. Then adjust the points so as to chain together the records in search-key order.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-72.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-72.png)
 
 Over a period of time, the correspondence between search-key order and physical order may be lost. In such a case, a file should be **reorganized** so that the physical order is regained. Reorganizations are costly and take a lot of time.
 
@@ -140,19 +140,19 @@ Most relational databases store each relation in seperate files. Thus, each file
 
 However, it can be useful to store records of more than one relation in a single block. Take, for example, the following SQL query:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-92.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-92.png)
 
 This query computes a join of the _department_ and _instructor_ relations. Thus, for each tuple of _department_, the system must locate the _instructor_ tuples with the same value for _dept_name_. These records must be transferred from disk to main memory. In the worst case, each record resides on a different block, which makes us do one block read per record required by the query.
 
 As a concrete example, consider the _department_ and _instructor_ relations of Figure 13.9 and 13.10, respectively.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-93.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-93.png)
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-94.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-94.png)
 
 Figure 13.11 shows a file structure designed for the efficient execution of queries involving the natural join of _department_ and _instructor_. All the _instructor_ tuples for a particular _dept_name_ are stored near the _department_ tuple for that _dept_name_. We say that the two relations are clustered on the key _dept_name_.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-95.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-95.png)
 
 A **multitable clustering file organization** is a file organization, like the one depicted in Figure 13.11, that stores related records of two or more relation in each block.
 
@@ -190,6 +190,6 @@ Index information (from Chapter 14) are also stored:
 
 Often times, metadata is stored in the database itself as a "miniature database". Figure 13.12 shows a schema diagram for a toy data dictionary.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-96.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-96.png)
 
 ## The rest of Chapter 13 was not covered in lecture.

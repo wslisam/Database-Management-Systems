@@ -10,7 +10,7 @@ schema _in_dep_, representing a natural join on the relations corresponding to _
 and _department_: <br>
 _in_dep_ (_ID, name, salary, dept name, building, budget_).
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-99.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-99.png)
 
 Notice that we have to repeat the department information (“building” and “budget”) once for
 each instructor in the department. This is redundant information. For example, the information about the Comp. Sci.
@@ -32,7 +32,7 @@ Not all decompositions of schemas are helpful. Consider a decomposition of the s
 Figure 7.3 shows these tuples, the resulting tuples using the schemas resulting from
 the decomposition, and the result if we attempted to regenerate the original tuples using a natural join.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-100.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-100.png)
 
 As we see in the figure, the two original tuples appear in the result
 along with two new tuples that incorrectly mix data values pertaining to the two employees named Kim. We can indicate that a certain street, city, and salary pertain to someone named Kim, but we are unable to distinguish which of the Kims.
@@ -103,7 +103,7 @@ We use functional dependencies in two ways:
 1. To determine whether instances of relations satisfy a set of functional dependencies _F_.
 2. To specify constraints on the set of legal relations.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-101.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-101.png)
 
 Consider the above instance of relation _r_. Observe that _A_ → _C_ is satisfied but not _C_ → _A_. The two tuples with an _A_ value of _a1_ have a _C_ value of _c1_. Similarly, the two tuples with an _A_ value of _a2_ have a _C_ value of _c2_; thus, _A_ → _C_ is satisfied. However, _C_ → _A_ is not satisfied because the tuples with a _C_ value of _c2_ do not have matching _A_ values; two tuples have an _A_ value of _a2_ and one has a value of _a3_.
 
@@ -174,7 +174,7 @@ In the case of _in_dep_, α = _dept_name_, β = {_building, budget_}, and _in_de
 Testing the entire database for consistency constraints (e.g. functional dependencies) everytime it is updated is costly. If testing a functional dependency can be done by considering just one relation, then the cost of testing this constraint is low. In some
 cases, decomposition into BCNF can prevent efficient testing of certain functional dependencies.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-102.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-102.png)
 
 Take the above E-R diagram which specifies the constraint that “a student may have more than one advisor, but at most one corresponding
 to a given department.” The schema derived from the _dept_advisor_ relationship set is _dept_advisor_ (_s_ID_, _i_ID_, _dept_name_).
@@ -241,7 +241,7 @@ To simplify matters further, we list additional rules:
 5. **Decomposition rule**. If α → βγ holds, then α → β holds and α → γ holds.
 6. **Pseudotransitivity rule**. If α → β holds and γβ → δ holds, then αγ → δ holds.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-103.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-103.png)
 
 ### 7.4.2 | Closure of Attribute Sets
 
@@ -250,7 +250,7 @@ An attribute _B_ is **functionally determined** by α if α → _B_.
 We call the set of all attributes functionally determined
 by α under a set _F_ of functional dependencies the closure of α under _F_; we denote it by α+. Below is an algorithm to compute α+.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-104.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-104.png)
 
 To illustrate how the algorithm works, we shall use it to compute (_AG_)+ with functional dependencies <br>
 _A_ → _B_ <br>
@@ -286,7 +286,7 @@ There are several uses of the attribute closure algorithm:
 
 #### BCNF Decomposition Algorithm
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-105.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-105.png)
 
 If R is not in BCNF, we can decompose R into a collection of BCNF schemas R1, R2, …, Rn by the above algorithm.
 

@@ -38,7 +38,7 @@ an absent value that may exist but be unknown or that may not exist at all.
 We define an SQL relation by using the **create table** command.
 
 The following command creates a relation _department_ in the database:
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-31.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-31.png)
 
 The relation created above has three attributes, _dept_name_, which is a character string
 of maximum length 20, _building_, which is a character string of maximum length 15,
@@ -46,7 +46,7 @@ and _budget_, which is a number with 12 digits in total, two of which are after 
 
 The general form of the _create table_ command is:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-32.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-32.png)
 
 where _r_ is the name of the relation, each _Ai_ is the name of an attribute in the schema of
 relation _r_, and _Di_ is the domain of attribute _Ai_.
@@ -59,7 +59,7 @@ SQL supports a number of different integrity constraints. In this section, we di
 
 Figure 3.1 shows the SQL data definition for part of the university database:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-33.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-33.png)
 
 There are also commands for manipulating existing tables:
 
@@ -86,7 +86,7 @@ Instructor names are found in the _instructor_ relation, so we put that in the f
 
 The resulting table looks like:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-35.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-35.png)
 
 Now, consider the query, "Find the department names of all instructors." The SQL query looks like this:
 
@@ -95,7 +95,7 @@ Now, consider the query, "Find the department names of all instructors." The SQL
 
 The resulting table looks like:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-36.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-36.png)
 
 Note how there re duplicate department names. If we want to force the elimination of duplicates, we insert the keyword **distinct** after the select clause:
 
@@ -117,7 +117,7 @@ The where clause allows us to select rows from a relation that satisfy a specifi
 
 The result:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-37.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-37.png)
 
 Logical connectives such as _and, or,_ and _not_ can be used in the where clause. The operands of the logical connectives can also involve comparison operators such as _<, <=, >, >=, =,_ and _<>_.
 
@@ -137,7 +137,7 @@ Note that the attribute _dept_name_ occurs in both the relations _instructor_ an
 
 The result of the query:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-38.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-38.png)
 
 The from clause acts as a Cartesian product of the relations listed in the clause.
 
@@ -148,7 +148,7 @@ Take, for example, the query:
 
 This outputs a relation that is a combination every tuple in _instructor_ and every tuple in _teaches_ even if they are unrelated to one another, which is not useful. The table below shows the result:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-39.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-39.png)
 
 The where clause combined with the Cartesian product from the from clause produces a more useful result, though.
 
@@ -161,7 +161,7 @@ matches an instructor with all the classes he/she teaches:
 
 This query produces:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-40.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-40.png)
 
 If we wished to find only instructor names and course identifiers for instructors
 in the Computer Science department, we could add an extra predicate to the where
@@ -294,7 +294,7 @@ For the examples in this section, two relations will be used:
 **from** _section_<br/>
 **where** _semester = 'Fall'_ **and** _year = 2017;_
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-41.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-41.png)
 
 -   The set of courses taught in the Spring 2018 semester, which will be named _c2_:
 
@@ -302,18 +302,18 @@ For the examples in this section, two relations will be used:
 **from** _section_<br/>
 **where** _semester = 'Spring'_ **and** _year = 2018;_
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-42.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-42.png)
 
 ### The Union Operation
 
 To find the set of all courses taught either in Fall 2017 or in Spring 2018, or both, we must take the union of _c1_ and _c2_,
 which is written as:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-43.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-43.png)
 
 The union operation eliminates duplicates, so the resulting relation is:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-44.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-44.png)
 
 If duplicates are desired, the operation **union all** should be used instead.
 
@@ -321,11 +321,11 @@ If duplicates are desired, the operation **union all** should be used instead.
 
 To find the set of all courses taught in both the Fall 2017 and Spring 2018, we must find the intersection of _c1_ and _c2_, which is written as:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-45.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-45.png)
 
 The intersection operation also eliminates duplicates, so the resulting relation is:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-46.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-46.png)
 
 If duplicates are desired, the operation **intersect all** should be used instead.
 
@@ -333,11 +333,11 @@ If duplicates are desired, the operation **intersect all** should be used instea
 
 To find all courses taught in the Fall 2017 semester but not in the Spring 2018 semester we must find _c1_ except _c2_, which is written as:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-47.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-47.png)
 
 The except operation also eliminates duplicates, so the resulting relation is:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-48.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-48.png)
 
 If duplicates are desired, the operation **except all** should be used instead.
 
@@ -348,17 +348,17 @@ An arithmetic operation involving a null value results in null as well. For exam
 Comparison operations involving a null value results in **unknown**, which provides a third logical value in addition to true and false.
 Since predicates in a where clause can involve boolean operators such as and, or, and not on the results of the comparison operations, the definitions of the boolean operations are extended to deal with the third value, unknown.
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-50.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-50.png)
 
 SQL uses the special keyword **is null** or **is not null** in a predicate to test for a null value. Thus, to
 find all instructors who appear in the instructor relation with null values for salary, we
 write:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-51.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-51.png)
 
 SQL allows us to test whether the result of a comparison is unknown, rather than
 true or false, by using the clauses **is unknown** and **is not unknown**. For example:
 
-![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-52.png)
+![](https://github.com/wslisam/Database-Management-Systems/blob/master/Book/Screenshots/databases-52.png)
 
 ## 3.7 | Aggregate Functions
