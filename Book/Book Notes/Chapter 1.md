@@ -70,7 +70,7 @@ a collection of conceptual tools for describing data, data relationships, data s
 
 An example of two tables in a relational data model:
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/0-databases.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/0-databases.png)
 
 ### Chapter 1.3.3: Data Abstraction
 
@@ -80,7 +80,7 @@ An example of two tables in a relational data model:
 2. **Logical Level**: _describes what data are stored in the database, and what relationships exist among those data_
 3. **View Level**: _the highest level of abstraction, application programs can hide details of data types, views can also hide information for security purposes_
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/1-databases.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/1-databases.png)
 
 ### Chapter 1.3.4: Instances and Schemas
 
@@ -116,7 +116,7 @@ The output of the DDL is placed in the **data dictionary**, which contains **met
 
 ### Chapter 1.4.2: The SQL Data-Definition Language
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/2-databases.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/2-databases.png)
 
 ### Chapter 1.4.3: Data-Manipulation Language
 
@@ -132,11 +132,11 @@ DML that involves information retrieval is called a **query language**.
 
 Here is an example of an SQL query that finds the names of all instructors in the History department:
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/3-databases.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/3-databases.png)
 
 The following query finds the instructor ID and department name of all instructors associated
 with a department with a budget of more than \$95,000:
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/4-databases.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/4-databases.png)
 
 ## I am skipping Chapters 1.5 to 1.9 for my sanity.

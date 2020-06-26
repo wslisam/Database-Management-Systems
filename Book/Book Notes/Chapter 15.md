@@ -5,7 +5,7 @@ database.
 
 ## 15.1 | Overview
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-107.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-107.png)
 
 Three basic steps in query processing:
 
@@ -34,7 +34,7 @@ Additionally, there are several algorithms to execute each relational algebra op
 Annotations may state the algorithm to be used for a specific operation or the particular index or indices to use. A relational-algebra operation annotated with instructions on how to evaluate it is called an **evaluation primitive**. A sequence of
 primitive operations that can be used to evaluate a query is a **query-execution plan**.
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-108.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-108.png)
 
 The different ways that a query can be written can have different costs. **Query optimization** is where the system chooses the best execution plan.
 

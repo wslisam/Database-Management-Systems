@@ -31,7 +31,7 @@ The second part contains the names of all the attributes of the entity
 set. Attributes that are part of the primary key are
 underlined. The E-R diagram below shows two entity sets instructor and student.
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-5.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-5.png)
 
 ### 6.2.2 | Relationship Sets
 
@@ -42,7 +42,7 @@ underlined. The E-R diagram below shows two entity sets instructor and student.
 
 **Relationship Set**: _a set of relationships of the same type_
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-6.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-6.png)
 
 **Relationship Instance**: _an association between the named entities in the real world enterprise that is being modeled in an E-R schema_
 
@@ -53,7 +53,7 @@ underlined. The E-R diagram below shows two entity sets instructor and student.
 A relationship set is represented in an E-R diagram by a diamond, which is linked
 via lines to a number of different entity sets (rectangles).
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-7.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-7.png)
 
 **Formal Definition of a Relationship Set**: _a mathematical relation on n ≥ 2 (possibly non-distinct) entity sets such that
 if E<sub>1</sub>, E<sub>2</sub>, ..., E<sub>n</sub> are entity sets, the relationship set R is a subset of_
@@ -69,7 +69,7 @@ An attribute of a relationship set is represented in an E-R diagram by an undivi
 rectangle. We link the rectangle with a dashed line to the diamond representing that
 relationship set.
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-8.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-8.png)
 
 **Degree of the Relationship Set**: _the number of entity sets that participate in a relationship set_
 
@@ -77,7 +77,7 @@ relationship set.
 -   e.g. a binary relationship _teach_ between two entity sets _instructor_ and _class_
 -   e.g. a ternary relationship _proj_guide_ between _instructor_, _student_, and _project_.
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-9.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-9.png)
 
 ## 6.3 | Complex Attributes
 
@@ -91,7 +91,7 @@ relationship set.
 -   e.g. An attribute _name_ could be structured as a composite attribute consisting of
     _first_name_, _middle_initial_, and _last_name_.
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-10.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-10.png)
 
 **Single-Valued and Multivalued Attributes**: _single-valued attributes can only have one value, while multivalued attributes can have multiple values; multivalued attributes are denoted in an E-R diagram like so: {phone_numbers}_
 
@@ -104,7 +104,7 @@ relationship set.
 An attribute takes a **null value** when an entity does not have a value for it. The null
 value may indicate “not applicable”.
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-11.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-11.png)
 
 ## 6.4 | Mapping Cardinalities
 
@@ -121,9 +121,9 @@ must be one of the following:
 
 4. **Many-to-many**: _an entity in A is associated with any number of entities in B; an entity in B is associated with any number of entities in A._
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-12.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-12.png)
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-13.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-13.png)
 
 **Cardinalities on an E-R Diagram**:
 
@@ -135,7 +135,7 @@ must be one of the following:
 
 4. **Many-to-many**: We draw an undirected line from the relationship set to both entity sets. In the example below, there are undirected lines from the relationship set _advisor_ to both entity sets _instructor_ and _student_. This indicates that an instructor may advise many students, and a student may have many advisors.
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-14.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-14.png)
 
 **Total and Partial Participation**: _The participation of an entity set E in a relationship set R is said to be total if every
 entity in E must participate in at least one relationship in R. If it is possible that some
@@ -150,7 +150,7 @@ We indicate total participation of an entity in a relationship set using double 
 The figure below shows an example of the advisor relationship set where the double line
 indicates that a student must have an advisor.
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-15.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-15.png)
 
 E-R diagrams also provide a way to indicate more complex constraints on the number of times each entity participates in relationships in a relationship set. A line may have an associated minimum and maximum cardinality, shown in the form _l..h_, where _l_ is the minimum and _h_ the maximum cardinality. A minimum value of 1 indicates total
 participation of the entity set in the relationship set; that is, each entity in the entity
@@ -158,7 +158,7 @@ set occurs in at least one relationship in that relationship set. A maximum valu
 1 indicates that the entity participates in at most one relationship, while a maximum
 value ∗ indicates no limit.
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-16.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-16.png)
 
 ## 6.5 | Primary Key
 
@@ -183,7 +183,7 @@ weak entity set to the identifying strong entity set is depicted by a double dia
 the figure below, the weak entity set _section_ depends on the strong entity set _course_ via the
 relationship set _sec_course_.
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-18.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-18.png)
 
 ## 6.6 | Removing Redundant Attributes in Entity Sets
 
@@ -206,7 +206,7 @@ of the relation schema.
 
 Take in account the _instructor_ entity in figure 6.8:
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-11.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-11.png)
 
 For the composite attribute _name_, the schema generated for _instructor_ contains the attributes _first_name, middle_initial_, and _last_name_; there is no separate attribute or schema for
 _name_. Similarly, for the composite attribute _address_, the schema generated contains
@@ -286,9 +286,9 @@ attribute _s_ID_ referencing the primary key of _student_.
 Applying the preceding techniques to the other relationship sets in the E-R diagram
 in figure 6.15, we get the relational schemas depicted in figure 6.17.
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-20.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-20.png)
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-21.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-21.png)
 
 ### 6.7.5 | Redundancy of Schemas
 
@@ -349,7 +349,7 @@ single arrow_
 
 Essentially, **generalization** is the opposite of specialization. Specialization represents a top-down design process, while generalization represents a bottom-up design process.
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-19.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-19.png)
 
 ### 6.8.3 | Inheritance
 
@@ -372,7 +372,7 @@ Such an entity set is treated in the same manner as is any other entity set. We
 can then create a binary relationship _eval_for_ between _proj_guide_ and _evaluation_ to represent which _(student, project, instructor)_ combination an _evaluation_ is for. Figure 6.20
 shows a notation for aggregation commonly used to represent this situation:
 
-![](https://github.com/wslisam/Database-Management-Systems/tree/master/Book/Screenshots/databases-22.png)
+![](https://github.com/wslisam/Database-Management-Systems/blog/master/Book/Screenshots/databases-22.png)
 
 ### 6.8.6 | Reduction to Relation Schemas
 
