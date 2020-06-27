@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2AB438F4-B4B5-8E2C-C5FD-F253893F3A66" name="InternalProject">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 14:25:41 UTC</createdTime>
+<ownerDesignName>labnotesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="projectNo" id="61B9CB64-7811-7CFC-7583-11A1B49EFFC5">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 15:26:04 UTC</createdTime>
+<ownerDesignName>labnotesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="title" id="3E5909CD-5439-6246-0F50-775751A42B6E">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 15:26:21 UTC</createdTime>
+<ownerDesignName>labnotesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E3E44142-2FAA-C717-220C-EB69DC5CC492" name="Project PK">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 15:26:14 UTC</createdTime>
+<ownerDesignName>labnotesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>61B9CB64-7811-7CFC-7583-11A1B49EFFC5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="labnotesERD" id="3381E414-6E77-9DCC-04EA-D87500FC8821" version="3.5">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 13:46:46 UTC</createdTime>
+<ownerDesignName>labnotesERD</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3381E414-6E77-9DCC-04EA-D87500FC8821</designId>
+</OSDM_Design>

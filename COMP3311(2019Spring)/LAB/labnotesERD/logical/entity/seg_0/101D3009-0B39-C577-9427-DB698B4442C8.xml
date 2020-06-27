@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="101D3009-0B39-C577-9427-DB698B4442C8" name="ExternalProject">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 16:20:46 UTC</createdTime>
+<ownerDesignName>labnotesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="externalProjectNo" id="1F64E65D-7837-586D-5FC3-5B6661038001">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 16:21:13 UTC</createdTime>
+<ownerDesignName>labnotesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="title" id="07137D6D-7A10-B635-9671-A21CF5916A0C">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 16:21:30 UTC</createdTime>
+<ownerDesignName>labnotesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3D382501-EC72-64C6-FA61-9A24EE315C6D" name="ExternalProject PK">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 16:21:33 UTC</createdTime>
+<ownerDesignName>labnotesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1F64E65D-7837-586D-5FC3-5B6661038001</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

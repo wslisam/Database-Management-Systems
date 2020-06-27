@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="WorksOn" directorySegmentName="seg_0" id="0CDC57E2-D440-CC47-6362-0311DF28345D">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 14:48:53 UTC</createdTime>
+<ownerDesignName>labnotesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F659B860-7D00-C9D2-3AE3-5B07827089A3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2AB438F4-B4B5-8E2C-C5FD-F253893F3A66</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="%time" id="C68CDF5A-46EF-2FCE-7136-FE3A199664B5">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 15:35:59 UTC</createdTime>
+<ownerDesignName>labnotesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>
