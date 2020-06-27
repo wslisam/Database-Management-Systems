@@ -67,12 +67,12 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVNote" oid="5D2D7AC3-8977-1E1A-C289-C73B1D248019" otype="Note" vid="12AB8BAD-5825-276F-E54B-4FA3A3CBC526">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="462" y="187" width="56" height="23"/>
+<bounds x="452" y="187" width="56" height="23"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-1</backgroundColor>
 <foregroundColor>-1</foregroundColor>
-<comment>has
+<comment>Has
 </comment>
 <fonts itemClass="oracle.dbtools.crest.model.design.FontObjectWr">
 <FontObject>
@@ -123,7 +123,7 @@
 <lineWidth>1</lineWidth>
 <centerLabel class="oracle.dbtools.crest.model.design.Label">
 <site>1</site>
-<labelBounds x="-52" y="-16" width="103" height="30"/>
+<labelBounds x="66" y="4" width="51" height="29"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </centerLabel>
