@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="45138CB1-86AB-D2A1-4ED9-C8E3D06729C5" name="Task">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 14:26:38 UTC</createdTime>
+<ownerDesignName>lab1notesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="projectNo" id="3DF05237-E0C6-A48E-E845-5D2E71981877">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 15:26:15 UTC</createdTime>
+<generatorID>A08A0770-27A7-B100-2337-42B0B894512B</generatorID>
+<ownerDesignName>lab1notesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<referedAttribute>61B9CB64-7811-7CFC-7583-11A1B49EFFC5</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="B6A3C9C1-6741-5189-DA1B-61DF15F49D5B">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 15:26:52 UTC</createdTime>
+<ownerDesignName>lab1notesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="startData" id="5B5EB021-E3C1-F461-5781-519225E8F634">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 15:27:00 UTC</createdTime>
+<ownerDesignName>lab1notesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="endDate" id="54476BE4-3B53-D417-C6A3-ECCF9E1ADAAD">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 15:27:15 UTC</createdTime>
+<ownerDesignName>lab1notesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="externalProjectNo" id="43FC8482-984E-FCF0-C7AF-F2E8238F22CE">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-27 16:44:47 UTC</createdTime>
+<generatorID>2B9E25A6-53CC-133F-BFD9-AA07F4B879C2</generatorID>
+<ownerDesignName>lab1notesERD</ownerDesignName>
+<engineerTo>
+<item key="7CB66148-C009-4BD7-0DBD-3ED5B71479F8" value="true"/>
+</engineerTo>
+<referedAttribute>1F64E65D-7837-586D-5FC3-5B6661038001</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
