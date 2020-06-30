@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CA67A548-8F8C-C6DD-2233-96001D6F5F4B" name="Patient">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:52:54 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>F132BA9D-FB22-D815-6314-000A5D40A1F2</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="registrationNo" id="B0440C4D-BFE8-AAC0-52E8-DFE5372D0B77">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:54:00 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="birthdata" id="ABCBE0F7-04BA-DCFB-0713-A7CB98A3E90D">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:54:16 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gender" id="ACCC9ECC-1179-3F9F-CEC8-755239BA89E3">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 18:02:11 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="wardNo" id="356653ED-90DA-77F3-1E7A-AFA03AA1CC60">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 18:31:25 UTC</createdTime>
+<generatorID>299CECF5-6149-82CE-6797-EB8DC1A3425B</generatorID>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4B6472EF-25E2-4246-4F30-61A822C7F58C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="empNo" id="169A6E98-1ABA-1877-91A9-2A8BAE50FB59">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 18:31:25 UTC</createdTime>
+<generatorID>299CECF5-6149-82CE-6797-EB8DC1A3425B</generatorID>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>D3012BD1-F7BD-34CE-073A-E923889CFF0A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B113137E-7DF8-895B-A11B-DC83B0077336" name="Patient PK">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:54:15 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B0440C4D-BFE8-AAC0-52E8-DFE5372D0B77</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EE764107-4675-3526-E42A-089BB56B0173" name="Ward">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:52:40 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="wardNo" id="4B6472EF-25E2-4246-4F30-61A822C7F58C">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:54:27 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="134F99D4-43E5-F58B-CF58-798C8C492A0E">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:54:32 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numberOfBeds" id="0B5B992E-BA7A-B7FB-CC02-FEF5EB9D0E24">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:54:35 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8170BF25-ED42-EE1D-93A2-B6C86B8A9DFC" name="Ward PK">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:54:31 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4B6472EF-25E2-4246-4F30-61A822C7F58C</attributeRef>
+<attributeRef>D3012BD1-F7BD-34CE-073A-E923889CFF0A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

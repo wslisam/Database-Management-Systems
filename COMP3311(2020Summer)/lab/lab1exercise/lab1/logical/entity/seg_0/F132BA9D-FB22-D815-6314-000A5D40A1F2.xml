@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F132BA9D-FB22-D815-6314-000A5D40A1F2" name="Person">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:51:34 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>73773785-41BF-3C94-C792-0197AC01131C</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hkid" id="CBE2055C-179B-CC72-15EE-43653BBE8D69">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:53:21 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="1A79EC6A-9FB8-5AA9-0867-C7F8C1248ADA">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:53:34 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address" id="AB2CEDC5-AF0C-EB69-4083-24D63E126BC6">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:53:40 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EB65B188-54A7-6E15-FFFD-EBF1A0CB9118" name="Person PK">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:53:33 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CBE2055C-179B-CC72-15EE-43653BBE8D69</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2CA89C30-F2BE-73D7-D2D1-808D1642A0A4" name="Staff">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:52:36 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>F132BA9D-FB22-D815-6314-000A5D40A1F2</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="empNo" id="6515CB6C-E67F-44DE-508F-37C0556267F1">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:53:47 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="duty" id="8F8BCDB9-B03E-1B92-5590-D6E8EFC29292">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:53:52 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="wardNo" id="45175884-F51A-1D3A-7EF5-7A5237F497DC">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 18:26:37 UTC</createdTime>
+<generatorID>BCF6C95A-DEAC-EEBD-3ED3-93E3EB233084</generatorID>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4B6472EF-25E2-4246-4F30-61A822C7F58C</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="empNo1" id="7AA61DF9-D36E-34E2-6089-A722308AA310">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 18:26:37 UTC</createdTime>
+<generatorID>BCF6C95A-DEAC-EEBD-3ED3-93E3EB233084</generatorID>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>D3012BD1-F7BD-34CE-073A-E923889CFF0A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FABDE326-7AAE-AD7C-AD01-DEC2072764B3" name="Staff PK">
+<createdBy>Sam Li</createdBy>
+<createdTime>2020-06-30 17:53:51 UTC</createdTime>
+<ownerDesignName>lab1</ownerDesignName>
+<engineerTo>
+<item key="94F68012-7BB1-2335-FF57-613C92262ECC" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6515CB6C-E67F-44DE-508F-37C0556267F1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
