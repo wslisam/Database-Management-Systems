@@ -1,0 +1,63 @@
+
+Query 1: Find the student id, first name, last name, email and cga of the students who
+         are in the ELEC department. Order the result by cga from highest to lowest cga.
+
+
+STUDENTI FIRSTNAME            LASTNAME                  EMAIL                  CGA
+-------- -------------------- ------------------------- --------------- ----------
+29873381 Nikola               Tesla                     eetesla               3.37
+13782973 Edith                Clarke                    eeclarke              3.15
+26184624 Bruce                Wayne                     eewayne               2.47
+14567890 Julius               Caesar                    eecaesar               1.9
+
+-------------------------------------------------------------------------------------------
+
+Query 2: Find the first name of the students whose first name
+         contains the letter "l" as the 3rd character.
+
+
+STUDENTI FIRSTNAME            LASTNAME                  EMAIL           PHONENO         CGA DEPA ADMI
+-------- -------------------- ------------------------- --------------- -------- ---------- ---- ----
+14567890 Julius               Caesar                    eecaesar        23589876        1.9 ELEC 2018
+15085942 Bill                 Gates                     csgates         25678679        3.4 COMP 2018
+
+-------------------------------------------------------------------------------------------
+
+Query 3: Find the last name of the students whose last name
+         contains either the letter "c" or the letter "z".
+
+
+LASTNAME                 
+-------------------------
+Da Vinci
+Lazy
+
+-------------------------------------------------------------------------------------------
+
+Query 4: Find the first name and last name of all students whose first name
+         or last name contains a double letter (e.g., "ee", "ll", "mm", etc.).
+
+
+FIRSTNAME            LASTNAME                 
+-------------------- -------------------------
+Harry                Potter                   
+Legolas              Greenleaf                
+Maria                Callas                   
+Lazzy                Lazy                     
+Warren               Buffet                   
+Ferris               Bueller                  
+Bill                 Gates                    
+Issac                Newton                   
+
+-------------------------------------------------------------------------------------------
+
+Query 5: Find the student id, first name, last name, cga and department name of
+         the students who are in the COMP or the ELEC department and whose CGA
+         is not in the range 2.5 to 3.5. Order the result by last name ascending.
+
+
+STUDENTI FIRSTNAME            LASTNAME                         CGA DEPA
+-------- -------------------- ------------------------- ---------- ----
+14567890 Julius               Caesar                           1.9 ELEC
+20505050 Sam                  Li                              3.64 COMP
+26184624 Bruce                Wayne                           2.47 ELEC
