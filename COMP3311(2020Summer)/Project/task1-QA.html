@@ -1,0 +1,275 @@
+<HTML>
+<HEAD>
+<TITLE>COMP 3311: Task 1 Q&amp;A</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<CENTER>
+
+&nbsp;
+</CENTER>
+<H2><CENTER>COMP 3311: Database Management Systems</CENTER></H2>
+<H3><CENTER>Task 1: Questions and Answers</CENTER></H3>
+<P><IMG SRC="../../../images/line-color.gif" WIDTH="100%" HEIGHT=3 ALIGN=bottom></P>
+<H4><CENTER>Posted Date</CENTER></H4>
+<CENTER>
+  | <a href="#july9">July 9</a> | <a href="#july10">July 10</a> | <a href="#july11">July 11</a> |
+</CENTER>
+<H4><IMG SRC="../../../images/eye-rule.gif" WIDTH="100%" HEIGHT=11 X-CLARIS-USEIMAGEHEIGHT ALIGN=bottom></H4>
+<table align="center" border="1" cellspacing="0" cellpadding="3" width="550">
+  <tr>
+    <td align="center" bgcolor="#FFFF00" valign="top"><strong style="color: red">Comment</strong></td>
+  </tr>
+  <tr>
+    <td valign="top">From some of the questions being asked it seems that some of you <strong>do not</strong> understand
+      what and what not to represent in a database design. This  is somewhat understandable if you have never designed
+      a database before.  However, please consider that a database design represents the (static) data <strong>only</strong>.
+      It <strong>does not</strong> represent the kinds of operations that users can  perform on the data.</td>
+  </tr>
+</table>
+<H4><A NAME="july11" id="july11"></A>July 11</H4>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>Do we need to give  each attrrbute a datatype since I see we need  to specify constraints on attributes.</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>No, you don't have to give attributes a datatype. The only constraints  on attributes that you need to specify are whether they are a key or a  discriminator.</TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>1. Is an author always a PC member? 2. Can someone who is not a PC member be an author? 3. Does every author have a username? 4. Is the contact author always a PC member? </TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>1. No. 2. Yes. 3. Only a contact author has a username. 4. No.</TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>Is the name of a PC member unique? If no, then  how to distinguish the identity of a PC member 
+    in  Appendix B   where the members are recorded with only their names. </TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>It should be obvious that the names of people cannot be unique so you cannot assume that 
+    the names of PC members are unique. In real life, people are quite adept at distinguishing 
+    between different people with the same name. In the context of the E-R model for 
+    the application, you  can tell who gave a comment by seeing to which PC member a comment is  related.</TD>
+  </TR>
+</TABLE>
+<H4><A NAME="july10" id="july10"></A>July 10</H4>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>Does an  author or the contact author submit the papers. 
+    As stated in the project description, the first stage is that the author submits only the information, 
+    and the second stage is the contact author submits the paper? However, in the Q&amp;A, you mentioned 
+    that "It will usually be the  author who submits the submission."</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>To submit a paper a login account is needed as described in the problem description 
+    and it is stated that the contact author needs a login account to manage a submission, 
+    which includes creating the submission information and uploading the submission. 
+    The previous answer should have said "It will usually be the contact author who submits the submission." 
+    Our mistake.</TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>Must PC members  have at least one review?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>No, of course not. A PC member is first assigned a submission to review. 
+    After reading the submission he/she will create a review. 
+    So, a PC member must be able to exist <b>before</b> having completed any review. 
+    This is just common sense.</TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>Can a review             be created with no value?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD><p>No. A review <b>cannot</b> be empty. An empty review is not a review at all.</p></TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD> Is there only one program committee in all? If not, how do we distinguish between them?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>For each conference, there is only one program committee.</TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>In the Q&amp;A page, it is mentioned that there is one set of discussions per submission. 
+    Shouldn't it be a set of comments by PC members which are part of the discussion?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>We view each comment as a discussion and all the comments as one set of discussions, 
+    but if you want to view it differently, then that's OK.</TD>
+  </TR>
+</TABLE>
+<br>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>Is there only one conference that we have to keep in mind, or can there be multiple conferences? 
+    If there are multiple, then how to distinguish them?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD><p>The project description states "the system should be general purpose and standalone so that 
+    each conference can use it to manage its own submissions and reviews." 
+    So, each database that is managed by the system is for one and only one conference. 
+    In other words, each conference has its own database, just like each student has their own database for the labs. 
+    Whatever you do on the database that you create in the lab does not affect the database of any other student 
+    even though you are all using the same Oracle database server and the same relational schema. 
+      
+    Similarly, the conference databases cannot interfere with each other since each conference
+    creates their own database for their conference based on the schema that you are designing.</p></TD>
+  </TR>
+</TABLE>
+<H4><A NAME="july9" id="july9"></A>July 9</H4>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>Does a PC chair also indicate his/her preference for reviewing submissions and will a PC chair 
+    assign PC chairs to review submissions?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>As stated in the problem description, a PC chair is also a PC member, so the answer is yes to both questions.</TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD> Must a submission review contain at least one 
+    question, multiple questions or can it be empty?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD> A submission review only exists if a PC member has created one, which implies that he/she has 
+    filled out all the required questions on the review form.</TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>Can there be multiple confidential comments (see appendix A)?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD><p>There is only one confidential comments for each review.</p></TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD> Can there be authors without any submissions?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>Technically no, but practically, as stated in the problem description, a contact author will need 
+    to create a login account before he/she submits anything. So, at least the contact author shoud be able 
+    to exist before a submission exists. However, the modeling requirement is that each author is related 
+    to at least one submission. How this is realized is dealt with later during implementation of the database.</TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>Is there only one discussion per submission?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>There is one <i>set</i> of discussions for each submission as shown in Appendix B. 
+    You need to be able to distinguish which PC member submitted each discussion for a given submission.</TD>
+  </TR>
+</TABLE>
+<br>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>Do authors, discussions and reviews require a unique identifier? </TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>No entity <b><i>requires</i></b> a unique identifier. It is <b><u>not</u></b> a requirement of the E-R model, 
+    but if an entity has a unique, then you should specify it. </TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>For the PC member/PC chair, what is the best way to represent whether a PC member is a PC chair?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>For E-R schema design purposes, you should pick the option that makes it most clear what you are representing. Often there are several "correct" options, but one of them may more clearly communicate the requirement. Since E-R diagrams are also used for communication with clients, this is an important consideration.</TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>In the problem description it says "... unique username, as well as
+    password ...". Does this mean password is unique as well?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD><p>The word unique applies to the username only.</p></TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>What is a contact author?</TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>A contact author is the author of a submission that should be contacted by the conference when the need for communication about a submission arises. It will usually be the contact author who submits the submission.</TD>
+  </TR>
+</TABLE>
+<BR>
+<TABLE WIDTH=600 BORDER=1 align="center" cellpadding="3" cellspacing="0">
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>Q:</B></P></TD>
+    <TD>For author information the problem description states "... email; which author is the contact 
+    author ..." does this mean that by looking at the email, we should know whether an author is the 
+    contact author or a PC member? </TD>
+  </TR>
+  <TR>
+    <TD VALIGN=top WIDTH=15><P><B>A:</B></P></TD>
+    <TD>No, it means that, if there is more than one author of a submission, then among all the authors of a submission, the contact author should be identified when submitting the submission. </TD>
+  </TR>
+</TABLE>
+</BODY>
+</HTML>
